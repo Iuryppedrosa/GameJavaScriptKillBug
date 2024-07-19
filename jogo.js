@@ -18,6 +18,7 @@ if (nivelAqui === "Fácil") {
 function ajustaTamanhoPalcoJogo() {
   alturaDaPagina = window.innerHeight;
   larguraDaPagina = window.innerWidth;
+  console.log(alturaDaPagina, larguraDaPagina);
 }
 ajustaTamanhoPalcoJogo();
 
@@ -34,8 +35,9 @@ var cronometro = setInterval(function () {
 
 function posicaoRandomica() {
   if (!document.getElementById("mosquito")) {
-    var posicaoX = Math.floor(Math.random() * alturaDaPagina) - 200;
-    var posicaoY = Math.floor(Math.random() * larguraDaPagina) - 100;
+    var posicaoX = Math.floor(Math.random() * larguraDaPagina) - 90;
+    var posicaoY = Math.floor(Math.random() * alturaDaPagina) - 90;
+    console.log(posicaoX, posicaoY);
 
     var mosquito = document.createElement("img");
 
